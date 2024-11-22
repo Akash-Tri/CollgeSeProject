@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page with Theme Changer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100 flex items-center justify-center min-h-screen transition-colors duration-300">
+  <!-- Theme Toggle Button -->
+  <div class="absolute top-4 right-4">
+    <button id="toggle"
+      onclick="toggleTheme()"
+      class="px-4 py-2 bg-gray-800 text-white rounded-md shadow-md dark:bg-gray-200 dark:text-gray-800">
+      Toggle Theme
+    </button>
+  </div>
+
+  <!-- Login Form -->
+  <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-sm">
+    <div class="flex justify-center mb-6">
+      <img src="Colegese logo.jpeg" alt="Company Logo" class="w-24 h-24">
+    </div>
+    <h2 class="text-2xl font-semibold text-center mb-6">Login to Your Account</h2>
+    <form action="#" method="post" class="space-y-4">
+      <div>
+        <label for="email-phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email/Phone Number</label>
+        <input
+          type="text"
+          id="email-phone"
+          name="email-phone"
+          placeholder="Enter your email or phone number"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300"
+          required
+        />
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300"
+          required
+        />
+      </div>
+      <button
+        type="submit"
+        class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200 dark:bg-blue-600 dark:hover:bg-blue-700">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
